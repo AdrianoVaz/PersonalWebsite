@@ -1,21 +1,12 @@
 import React from 'react';
-import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Adriano's personal Website, with my first  and second update
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <div style={{ color: 'red', fontSize: 36 }}>Header</div>
+            <div>Body</div>
+        </div>
+    );
 }
 
 export default App;
