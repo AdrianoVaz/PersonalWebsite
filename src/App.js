@@ -11,7 +11,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Adriano's personal Website
+          Adriano's personal Website, with my first update
         </a>
       </header>
     </div>
