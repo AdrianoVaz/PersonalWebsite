@@ -7,6 +7,9 @@ const styles = {
         flexDirection: 'column',
         maxWidth: '66mm',
         paddingRight: '10px',
+        backgroundColor: '#cbd0d8',
+        paddingLeft: '24px',
+        paddingRight: '24px',
     },
     skillHeader: {
         marginBottom: '10px',
@@ -21,37 +24,47 @@ const styles = {
     aboutMeHeader: {
         marginTop: 0,
     },
+    spacedContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        flex: 1,
+    },
 };
 
 function LeftBar() {
     return (
         <div style={styles.container}>
-            <h2 style={styles.aboutMeHeader}>
+            <div style={styles.spacedContainer}>
+                <h2 style={styles.aboutMeHeader}>
                     About me:
-            </h2>
-            <div style={styles.aboutMe}>
+                </h2>
+                <div style={styles.aboutMe}>
+             "Although somewhat inexperienced, I adapt quickly to
+            new environments while maintaining a great passion to learn which
+             I believe will make me a good asset in the long run."
 
-                "I am a very nice person ;) then hire me and pay me.
-                Btw I accept tips aswell"
-
+                </div>
             </div>
-            <div>
-                <h3 style={styles.skillHeader}>
-                    Fluent in:
-                </h3>
+            <div style={styles.spacedContainer}>
+                <h2 style={styles.skillHeader}>
+                    Education
+                </h2>
                 <div style={styles.skill}>
                     <div>
-                        Portuguese
+                        <b>(2017/present) </b>
+                        - Masters of Computer Engineering, University of Algarve.
                     </div>
                     <div>
-                        English
+                        <b>(2014/2017) </b>
+                        - Bachelor of Computer Engineering, University of Algarve.
                     </div>
                 </div>
             </div>
-            <div>
-                <h3 style={styles.skillHeader}>
+            <div style={styles.spacedContainer}>
+                <h2 style={styles.skillHeader}>
                     Skills:
-                </h3>
+                </h2>
                 <div style={styles.skill}>
                     <div>
                         Python
@@ -66,7 +79,23 @@ function LeftBar() {
                         CSS
                     </div>
                     <div>
+                        GIT
+                    </div>
+                    <div>
                         Google Fu
+                    </div>
+                </div>
+            </div>
+            <div style={styles.spacedContainer}>
+                <h2 style={styles.skillHeader}>
+                    Fluent in:
+                </h2>
+                <div style={styles.skill}>
+                    <div>
+                        Portuguese
+                    </div>
+                    <div>
+                        English
                     </div>
                 </div>
             </div>

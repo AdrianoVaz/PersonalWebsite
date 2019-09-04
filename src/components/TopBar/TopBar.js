@@ -38,14 +38,23 @@ const styles = {
         color: 'inherit',
         textDecoration: 'none',
     },
+    nameComponent: {
+        marginBottom: 0,
+    },
+    jobTitle: {
+        fontSize: 18,
+        fontWeight: 300,
+        marginBottom: 12,
+    },
 };
 
 function TopBar() {
     return (
         <div style={styles.container}>
-            <h1>
+            <h1 style={styles.nameComponent}>
                 Adriano Fernandes Vaz
             </h1>
+            <span style={styles.jobTitle}>Junior Fullstack Developer</span>
             <div style={styles.contactsContainer}>
                 <span style={styles.contact}>
                     <img src={emailMeIcon} style={styles.contactImage} alt="email" />

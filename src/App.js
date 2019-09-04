@@ -11,7 +11,7 @@ const styles = {
         flexDirection: 'column',
         maxHeight: '296mm',
         maxWidth: '210mm',
-        margin: '6mm',
+        margin: '12mm',
         flex: 1,
     },
     bodyContainer: {
